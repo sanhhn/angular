@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{0343D552-5740-4537-9071-A018CF0E980E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AngularApp/ClientApp/src/app/fetch-data/fetch-data.component.html">
+    <Files>
+      <File FileName="AngularApp/SampleDataController.cs" Line="15" Column="11" />
+      <File FileName="AngularApp/ClientApp/src/app/fetch-data/fetch-data.component.html" Line="24" Column="9" />
+      <File FileName="AngularApp/ClientApp/src/app/fetch-data/fetch-data.component.ts" />
+      <File FileName="AngularApp/Startup.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AngularApp" expanded="True">
+            <Node name="AngularApp" expanded="True">
+              <Node name="ClientApp" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AngularApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
