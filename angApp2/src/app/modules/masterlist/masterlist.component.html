@@ -1,0 +1,15 @@
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Colum name</th>
+            <th>Rank</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let col of gridColumns">
+          <td>{{ col.ColumnName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
