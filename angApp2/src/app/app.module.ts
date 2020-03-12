@@ -5,23 +5,28 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { AccountListComponent } from './account-list/account-list.component';
-import { AccountCreateComponent } from './account-create/account-create.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
-import { ContactCreateComponent } from './contact-create/contact-create.component';
-import { ActivityListComponent } from './activity-list/activity-list.component';
-import { ActivityCreateComponent } from './activity-create/activity-create.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from './app.effects';
 
 @NgModule({
   declarations: [
-    AppComponent, AccountListComponent, AccountCreateComponent, ContactListComponent, ContactCreateComponent, ActivityListComponent, ActivityCreateComponent 
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true
+      }
+    }),
+    EffectsModule.forRoot([AppEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
